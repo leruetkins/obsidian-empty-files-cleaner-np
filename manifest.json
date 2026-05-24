@@ -1,0 +1,10 @@
+{
+  "id": "empty-files-cleaner-np",
+  "name": "Empty Files Cleaner NP",
+  "version": "1.0.0",
+  "minAppVersion": "0.15.0",
+  "description": "Find and delete empty markdown files in your vault. Shows a list with checkboxes to select and bulk-delete.",
+  "author": "leruetkins",
+  "authorUrl": "https://github.com/leruetkins",
+  "isDesktopOnly": false
+}

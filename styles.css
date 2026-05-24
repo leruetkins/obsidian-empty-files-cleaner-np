@@ -1,0 +1,208 @@
+/* ===== Empty Files Cleaner Modal ===== */
+
+.empty-files-modal .modal-content {
+  padding: 0;
+  min-width: 520px;
+  max-width: 640px;
+}
+
+.ef-header {
+  padding: 28px 28px 20px;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.ef-header h2 {
+  margin: 0 0 6px;
+  font-size: 1.3em;
+  font-weight: 700;
+  color: var(--text-normal);
+}
+
+.ef-subtitle {
+  margin: 0;
+  font-size: 0.88em;
+  color: var(--text-muted);
+}
+
+/* Scanning state */
+.ef-scanning {
+  padding: 40px 28px;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.95em;
+}
+
+/* Empty state */
+.ef-empty-state {
+  padding: 40px 28px;
+  text-align: center;
+  font-size: 1em;
+  color: var(--text-success, #4caf50);
+  font-weight: 500;
+}
+
+/* Stats bar */
+.ef-stats {
+  display: flex;
+  align-items: center;
+  padding: 12px 28px;
+  background: var(--background-secondary);
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.ef-count {
+  font-size: 0.85em;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Controls */
+.ef-controls {
+  display: flex;
+  gap: 8px;
+  padding: 12px 28px;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+/* File list */
+.ef-list {
+  max-height: 340px;
+  overflow-y: auto;
+  padding: 8px 0;
+}
+
+.ef-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.ef-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.ef-list::-webkit-scrollbar-thumb {
+  background: var(--background-modifier-border);
+  border-radius: 3px;
+}
+
+/* File item */
+.ef-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 28px;
+  cursor: pointer;
+  transition: background 0.1s ease;
+  border-bottom: 1px solid var(--background-modifier-border-hover);
+}
+
+.ef-item:last-child {
+  border-bottom: none;
+}
+
+.ef-item:hover {
+  background: var(--background-modifier-hover);
+}
+
+.ef-checkbox {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  cursor: pointer;
+  accent-color: var(--interactive-accent);
+}
+
+.ef-item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  overflow: hidden;
+}
+
+.ef-item-name {
+  font-size: 0.95em;
+  font-weight: 500;
+  color: var(--text-normal);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ef-item-path {
+  font-size: 0.78em;
+  color: var(--text-faint);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Footer */
+.ef-footer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 28px;
+  border-top: 1px solid var(--background-modifier-border);
+  background: var(--background-primary);
+  justify-content: flex-end;
+}
+
+/* Buttons */
+.ef-btn {
+  padding: 7px 16px;
+  border-radius: 6px;
+  font-size: 0.88em;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+}
+
+.ef-btn-secondary {
+  background: var(--background-modifier-border);
+  color: var(--text-normal);
+  border-color: var(--background-modifier-border);
+}
+
+.ef-btn-secondary:hover {
+  background: var(--background-modifier-hover);
+}
+
+.ef-btn-ghost {
+  background: transparent;
+  color: var(--text-muted);
+  border-color: var(--background-modifier-border);
+}
+
+.ef-btn-ghost:hover {
+  background: var(--background-modifier-hover);
+  color: var(--text-normal);
+}
+
+.ef-btn-danger {
+  background: var(--background-modifier-error, #5c1a1a);
+  color: var(--text-error, #ff6b6b);
+  border-color: var(--background-modifier-error, #5c1a1a);
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.ef-btn-danger:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.ef-btn-danger--active,
+.ef-btn-danger:not(:disabled) {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.ef-btn-danger--active:hover,
+.ef-btn-danger:not(:disabled):hover {
+  background: var(--text-error, #ff4444);
+  color: white;
+  border-color: var(--text-error, #ff4444);
+}
